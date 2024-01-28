@@ -1,5 +1,5 @@
 # All-Web-Development-Projects
-# Kartikey Gupta's Beginner Frontend Projects
+# Kartikey Gupta's Beginner-Level Frontend Projects
 
 Welcome to my repository featuring a collection of beginner-level frontend projects. I'm Kartikey Gupta, a passionate front-end web developer, and this repository is designed to help beginners practice HTML, CSS, and JavaScript through hands-on projects.
 
