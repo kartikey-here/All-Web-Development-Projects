@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poor Story', system-ui;
+    text-align: center;
+}
+
+.body {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(253, 187, 45);
+    background: linear-gradient(0deg, rgba(253, 187, 45, 1) 0%, rgba(34, 61, 195, 1) 100%);
+}
+
+.txt,
+.platehahaha {
+    height: 100%;
+    color: #ffffff;
+    /* background-color: aqua;   */
+    width: 48%;
+    flex-direction: column;
+}
+
+.txt {
+    font-size: 100px;
+}
+
+button {
+    margin-top: 100px;
+    border-radius: 5px;
+    border: 3px black solid;
+    font-size: 25px;
+    width: 150px;
+    height: 40px;
+}
+.plate{
+    background-color: #ffffff;
+    width: 90%;
+    height: 70%;
+    border: 5px grey dashed;
+}
+#codd,#codd1{
+    font-size: 30px;
+
+}
+.extra{
+    width: 100vw;
+    height: 100vh;
+}
+.bich{
+    width: 40%;
+    box-shadow:0 0 10px 10px grey;
+    border-radius: 10px;
+    height: 120px;
+    background-color:beige;
+}
+.bich button{
+    box-shadow: 0 0 2px 2px grey;
+    width: 80%;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+}
+@media (max-width:870px) {
+    .txt{
+        font-size: 80px;
+    }
+}
+@media (max-width:686px) {
+    .txt{
+        font-size: 60px;
+    }
+}
+@media (max-width:520px) {
+    .platehahaha{
+        width: 100%;
+    }
+    .txt{
+        width: 80%;
+        font-size: 50px;
+    }
+    button{
+        margin: 10px;
+    }
+    .body{
+        flex-direction: column;
+    }
+}
