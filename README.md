@@ -15,13 +15,21 @@ Welcome to my repository featuring a collection of beginner-level frontend proje
 If you find these projects helpful, consider giving the repository a star. You can also connect with me on various platforms:
 
 **GitHub**: https://github.com/kartikey-here/
+
 **LinkedIn**: https://www.linkedin.com/in/kartikey-here/
+
 **Youtube**: https://www.youtube.com/channel/UCPxIKMW7CmGRm1Y000Xq_RA?sub_confirmation=1
+
 **Instagram**: https://www.instagram.com/kartikey_._here/
+
 **Twitter**: https://twitter.com/kartikey_here
+
 **GeeksforGeeks**: https://auth.geeksforgeeks.org/user/kartikey_here
+
 **LeetCode**: https://leetcode.com/wtakartikey/
+
 **HackerRank**: https://www.hackerrank.com/profile/wtakartikey
+
 
 
 Thank you for your support!
