@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+.body {
+    height: 89.35vh;
+    width: 100vw;
+    padding: 2.5%;
+    background: linear-gradient(blue, green);
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 100px;
+    margin-bottom: 5%;
+    background: -webkit-linear-gradient(rgb(241, 12, 12), rgb(212, 191, 4));
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* background-color: aquamarine; */
+}
+
+.quiz {
+    width: 95%;
+    /* padding: 2.5%; */
+    /* background-color: bisque; */
+    flex-direction: column;
+}
+
+#qno,
+#qu,
+#o1,
+#o2,
+#o3,
+#o4 {
+    width: 100%; 
+    border: transparent;
+    background: transparent;
+    /* height: 30px; */
+    margin-top: 1.5%;
+    /* padding: 1.5%; */
+    /* background-color: chartreuse; */
+    border-radius: 10px;
+    font-size: 20px;
+    /* transition: box-shadow 0.3s ease-in-out; */
+}
+#o1:hover,
+#o2:hover,
+#o3:hover,
+#o4:hover{
+    box-shadow: 0 0 10px 1px grey ;
+}
+
+#qno {
+    background: transparent;
+    margin-top: 0;
+    justify-content: left;
+    font-size: 30px;
+}
+
+#qu {
+    margin-bottom: 1.5%;
+}
+
+.button {
+    width: 90%;
+    margin-top: 5%;
+    justify-content: right;
+}
+
+.button button {
+
+    color: red;
+    font-size: 20px;
+    width: 180px;
+    height: 40px;
+}
