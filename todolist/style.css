@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+body {
+    background: linear-gradient(#B47E7B,#BCF095);
+    min-height: 100vh;
+    /* background-color: #B47E7B; */
+    /* padding: 1%; */
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    align-items: center;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+
+.add {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    font-size: large;
+    border: 0;
+}
+
+.note {
+    width: 50%;
+    /* width: 320px;     */
+    /* background-color: white; */
+    height: 60;
+    margin: 20px;
+    display: flex;
+}
+
+.option {
+    margin-left: 5px;
+    /* width: 20px; */
+    height: 60px;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#update,
+#del,
+#markasdone {
+    border-radius: 10%;
+    /* margin-right: 5px; */
+    border: 0;
+    width: 22px;
+    height: 22px;
+    background-image: url(https://static.thenounproject.com/png/4436557-200.png);
+}
+
+#markasdone {
+    background-image: url(https://static.thenounproject.com/png/2433803-200.png);
+}
+
+#del {
+    background-image: url(https://cdn1.iconfinder.com/data/icons/mini-ui-kit-one/100/Untitled-1-02-512.png);
+}
+
+.notes {
+    font-size: larger;
+    color: black;
+    border: 0;
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    font-weight: bold;
+    /* align-items:self-star; */
+}
+
+
+@media (max-width:500px) {
+    body {
+        margin-top: 30px;
+    }
+
+    .add {
+        font-size: smaller;
+    }
+
+    .note {
+        font-size: 10px;
+        width: 300px;
+    }
+}
