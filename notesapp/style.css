@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+body {
+    background-color: hsl(182, 47%, 24%);
+    /* padding: 1%; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.add {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    font-size: large;
+    border: 0;
+}
+
+.note {
+    width: 320px;
+    /* background-color: white; */
+    min-height: 300px;
+    margin: 20px;
+}
+
+.option {
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#save,
+#del {
+    border-radius: 10%;
+    margin-right: 5px;
+    border: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url(https://icons.veryicon.com/png/o/miscellaneous/utility/save-44.png);
+}
+
+#del {
+    background-image: url(https://cdn1.iconfinder.com/data/icons/mini-ui-kit-one/100/Untitled-1-02-512.png);
+}
+
+.notes {
+    font-size: larger;
+    color: black;
+    border: 0;
+    width: 100%;
+    text-align: center;
+    height: 270px;
+    font-weight: bold;
+    /* align-items:self-star; */
+}
+
+
+@media (max-width:500px) {
+    .add {
+        font-size: small;
+    }
+
+    .note {
+        width: 300px;
+    }
+}
