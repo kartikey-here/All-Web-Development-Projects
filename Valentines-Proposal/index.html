@@ -16,10 +16,23 @@
     <marquee>Created By The One and Only, and you know who is that..</marquee>
 </body>
 <script>
+    document.getElementById('yes').addEventListener('click', () => {
+        document.getElementsByTagName('body')[0].innerHTML = `
+        <center>
+            <a href="https://www.instagram.com/kartikey_._here/">Lets.. Go Here</a>
+            <br/><br/>
+            <a href="https://www.snapchat.com/add/kartikey.here?share_id=ILFLANSQhS0&locale=en-US">Or we an Go Here</a>
+            <br/><br/>
+            <a href="https://wa.me/918887584792">Or Here</a>
+            <br/><br/>
+            <a href="https://www.linkedin.com/in/kartikey-here/">Last Choice</a>
+        </center>`;
+        alert("Let's Go")
+    });
     const butno = document.getElementById('no');
     const butyes = document.getElementById('yes');
     let i = 1;
-    let j=0;
+    let j = 0;
     const variations = [
         "Are you Sure?",
         "I'm afraid not.",
@@ -49,8 +62,8 @@
         butyes.style.height = 40 + 20 * i + `px`;
         i += 1
         console.log(i)
-        if(j==variations.length-1)j=1
-        j+=1
+        if (j == variations.length - 1) j = 1
+        j += 1
         var x = variations[j];
 
         butno.innerHTML = x;
@@ -72,35 +85,42 @@
         flex-direction: column;
         align-items: center;
     }
-    #yes{
+
+    #yes {
         margin-right: 2px;
         background-color: rgb(127, 207, 6);
     }
-    #no{
+
+    #no {
         background-color: red;
     }
+
     h1 {
         backdrop-filter: blur(10px);
         margin-bottom: 100px;
     }
-    div{
+
+    div {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
     }
+
     button {
         border-radius: 10px;
         border: 1px solid grey;
         height: 40px;
         width: 70px;
     }
-    marquee{
+
+    marquee {
         position: fixed;
         bottom: 10px;
     }
+
     @media (max-width:500px) {
-        *{
+        * {
             font-size: smaller;
         }
     }
