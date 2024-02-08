@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset=" UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine</title>
+</head>
+
+<body>
+    <h1>Will you be my Valentine?</h1>
+    <div>
+        <button id="yes">Yes</button>
+        <button id="no">No</button>
+    </div>
+    <marquee>Created By The One and Only, and you know who is that..</marquee>
+</body>
+<script>
+    const butno = document.getElementById('no');
+    const butyes = document.getElementById('yes');
+    let i = 1;
+    let j=0;
+    const variations = [
+        "Are you Sure?",
+        "I'm afraid not.",
+        "No, that doesn't seem right.",
+        "Negative, I don't think so.",
+        "Nope, that's not accurate.",
+        "Sorry, but I disagree.",
+        "Absolutely not, rethink your approach.",
+        "Definitely not the right way to go.",
+        "Not quite, let's reconsider.",
+        "No way, let's take another look.",
+        "Incorrect, please rethink your answer.",
+        "That's a negative, please verify again.",
+        "I'm not convinced, are you sure?",
+        "Not so fast, let's double-check.",
+        "Hold on, are you absolutely sure?",
+        "Not exactly, perhaps you should reconsider.",
+        "I beg to differ, let's reassess.",
+        "Absolutely not, I suggest you rethink.",
+        "That's a firm no, let's review the facts.",
+        "I'm inclined to disagree, are you certain?",
+        "Let's pump the brakes and rethink our approach."
+    ];
+
+    document.getElementById('no').addEventListener('click', () => {
+        butyes.style.width = 70 + 20 * i + `px`;
+        butyes.style.height = 40 + 20 * i + `px`;
+        i += 1
+        console.log(i)
+        if(j==variations.length-1)j=1
+        j+=1
+        var x = variations[j];
+
+        butno.innerHTML = x;
+    });
+</script>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        /* background-position: center; */
+        background-size: cover;
+        background-image: url('https://c4.wallpaperflare.com/wallpaper/167/877/228/plenty-of-love-hearts-wallpaper-preview.jpg');
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    #yes{
+        margin-right: 2px;
+        background-color: rgb(127, 207, 6);
+    }
+    #no{
+        background-color: red;
+    }
+    h1 {
+        backdrop-filter: blur(10px);
+        margin-bottom: 100px;
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    button {
+        border-radius: 10px;
+        border: 1px solid grey;
+        height: 40px;
+        width: 70px;
+    }
+    marquee{
+        position: fixed;
+        bottom: 10px;
+    }
+    @media (max-width:500px) {
+        *{
+            font-size: smaller;
+        }
+    }
+</style>
+
+</html>
