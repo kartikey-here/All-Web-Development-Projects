@@ -8,7 +8,7 @@ const plus = (data) => {
     const note = document.createElement('div');
     note.classList.add('note')
     note.innerHTML += `
-    <input type="text" class="notes" onchange="save()" placeholder="A Crappy Place to Keep your Notes" value="`+ data + `">
+    <input type="text" class="notes" onchange="save()" placeholder="A Crappy Place to Make your List..." value="`+ data + `">
         <div class="option">
             <button id="markasdone"></button>
             <!--<button id="update"></button>-->
